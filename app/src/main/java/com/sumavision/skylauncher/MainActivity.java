@@ -176,7 +176,7 @@ public class MainActivity extends Activity implements View.OnFocusChangeListener
         livePosterLayout.setOnFocusChangeListener(this);
         vodPosterLayout.setOnFocusChangeListener(this);
         settingsPosterLayout.setOnFocusChangeListener(this);
-        //test
+
         settingsIcon.setOnFocusChangeListener(this);
         vodIcon.setOnFocusChangeListener(this);
         liveIcon.setOnFocusChangeListener(this);
