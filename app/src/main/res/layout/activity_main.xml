@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/state_icon"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/premiun_poster_layout"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/time2"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/time2"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"/>
+
+    <ImageView
+        android:id="@+id/ad_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="484dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/icon_layout"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/pooq_icon"
+        android:padding="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ad_poster"/>
+
+    <RelativeLayout
+        android:id="@+id/pooq_poster_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ad_poster"
+        android:layout_marginLeft="@dimen/poster_space"
+        android:layout_toRightOf="@id/ad_poster"
+        android:background="@drawable/icon_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/pooq_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pooq_poster"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/pooq_text"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:shadowColor="#ff000000"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/premiun_poster_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ad_poster"
+        android:layout_marginLeft="@dimen/poster_space"
+        android:layout_toRightOf="@id/pooq_poster_layout"
+        android:background="@drawable/icon_layout"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusRight="@id/premiun_poster_layout"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/premiun_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/premiun_poster"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/premium_text"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:shadowColor="#ff000000"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/live_poster_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pooq_poster_layout"
+        android:layout_marginLeft="@dimen/poster_space"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/ad_poster"
+        android:background="@drawable/icon_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/live_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/live_poster"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/live_text"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:shadowColor="#ff000000"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/vod_poster_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/live_poster_layout"
+        android:layout_marginLeft="@dimen/poster_space"
+        android:layout_toRightOf="@id/live_poster_layout"
+        android:background="@drawable/icon_layout"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/vod_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/vod_poster"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/vod_text"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:shadowColor="#ff000000"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_poster_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/live_poster_layout"
+        android:layout_marginLeft="@dimen/poster_space"
+        android:layout_toRightOf="@id/vod_poster_layout"
+        android:background="@drawable/icon_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/settings_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/settings_poster"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/setting_text"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:shadowColor="#ff000000"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/settings_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1080dp"
+        android:layout_marginTop="600dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/vod_icon"
+        android:nextFocusRight="@id/settings_icon"
+        android:nextFocusUp="@+id/live_poster"
+        android:padding="1dp"
+        android:src="@drawable/setting_icon"/>
+
+    <ImageView
+        android:id="@+id/vod_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1080dp"
+        android:layout_marginTop="600dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/live_icon"
+        android:nextFocusRight="@id/settings_icon"
+        android:nextFocusUp="@+id/live_poster"
+        android:padding="1dp"
+        android:src="@drawable/vod_icon"/>
+
+    <ImageView
+        android:id="@+id/live_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1080dp"
+        android:layout_marginTop="600dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/premium_icon"
+        android:nextFocusRight="@id/vod_icon"
+        android:nextFocusUp="@+id/ad_poster"
+        android:padding="1dp"
+        android:src="@drawable/live_icon"/>
+
+    <ImageView
+        android:id="@+id/premium_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1080dp"
+        android:layout_marginTop="600dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/pooq_icon"
+        android:nextFocusRight="@id/live_icon"
+        android:nextFocusUp="@+id/ad_poster"
+        android:padding="1dp"
+        android:src="@drawable/premium_icon"/>
+
+    <ImageView
+        android:id="@+id/pooq_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1080dp"
+        android:layout_marginTop="600dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/pooq_icon"
+        android:nextFocusRight="@id/premium_icon"
+        android:nextFocusUp="@+id/ad_poster"
+        android:padding="1dp"
+        android:src="@drawable/pooq_icon"/>
+
+    <ImageView
+        android:id="@+id/focus_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/focus_layout"
+        android:visibility="gone"/>
+
+</RelativeLayout>

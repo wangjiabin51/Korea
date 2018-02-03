@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SkyLauncher</string>
+
+    <string name="pooq_text">Pooq Live&amp;VOD </string>
+    <string name="premium_text">KoreaTV Premium</string>
+    <string name="live_text">ChinaTV Live</string>
+    <string name="vod_text">BestTV VOD</string>
+    <string name="setting_text">Settings</string>
+
+</resources>
